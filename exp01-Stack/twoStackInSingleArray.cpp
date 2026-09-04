@@ -1,5 +1,5 @@
 #include <iostream.h>
-#define Max 10;
+#define Max 10
 class Mstack{
     int top1,top2,arr[Max];
     public:
@@ -23,7 +23,7 @@ void Mstack::push1(){
 
 }
 void Mstack::push2(){
-    if(top2-1==top1)P{
+    if(top2-1==top1){
         cout<<"\nstack is overflow\n";
     }
     else{
@@ -33,7 +33,7 @@ void Mstack::push2(){
     }
 }
 void Mstack::pop1(){
-if(top1==-1)cout>>"\n Stack is under flow\n";
+if(top1==-1)cout<<"\n Stack is under flow\n";
 else {
     top1--;
     cout<<"\n element poped \n";
@@ -43,18 +43,18 @@ else {
 void Mstack::pop2(){
 if(top2==Max)cout>>"\n Stack is under flow\n";
 else {
-    top1++;
+    top2++;
     cout<<"\n element poped \n";
 }
 
 }
 void Mstack::display1(){
-    for(int i=top1;i<=0;i--){
+    for(int i=top1;i>=0;i--){
         cout<<arr[i]<<endl;
     }
 }
 void Mstack::display2(){
-    for(int i=top2;i>Max;i++){
+    for(int i=top2;i<Max;i++){
         cout<<arr[i]<<endl;
     }
 }
@@ -67,12 +67,12 @@ int main(){
         cout<<"\n choose \n1.display1 \n2.display2\n3.push1\n4.push2\n5.pop1\n6.pop2\n";
         cin>>ch;
         switch(ch){
-            case 1: display1();break;
-            case 2: display2();break;
-            case 3: push1();break;
-            case 4: push2();break;
-            case 5: pop1();break;
-            case 6: pop2();break;
+            case 1: s.display1();break;
+            case 2: s.display2();break;
+            case 3: s.push1();break;
+            case 4: s.push2();break;
+            case 5: s.pop1();break;
+            case 6: s.pop2();break;
         }
         cout<<"\n do you want to continue ? (Y/y)\n";
         cin>>y;

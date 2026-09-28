@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 #define Max 10
 class Mstack{
     int top1,top2,arr[Max];

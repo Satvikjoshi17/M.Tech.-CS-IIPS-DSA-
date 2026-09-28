@@ -1,4 +1,4 @@
-#include <iostream.h>
+#include <iostream>
 #define Max 10
 class Queue{
     int arr[Max],f,r;

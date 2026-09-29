@@ -22,7 +22,7 @@ public:
 void Mstack::push1()
 {
     if (top1 == top2 - 1)
-        cout << "stack is full";
+        cout<< "stack is full";
     else
     {
         cout << "enter value ";
@@ -65,7 +65,7 @@ void Mstack::display2(){
 for(int i=top2;i<=MAX-1;i++){
     cout<<a[i];
 }}
-void main(){
+int main(){
     Mstack s;
     int choice; char c;
     do{
